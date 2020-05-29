@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 
 @RestController
-@RequestMapping(value = "/conversion")
+@RequestMapping(value = "/conversions")
 public class ConversionController {
     private static final Logger LOGGER = Logger.getLogger(ConversionController.class.getName());
     @Autowired

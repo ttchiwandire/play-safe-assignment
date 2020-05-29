@@ -47,7 +47,7 @@ class ConversionControllerTest {
         when(conversionController.convertCelciusToKelvin(anyFloat())).thenReturn(74562.00f);
 
         //SUT
-        mockMvc.perform(get("/conversion/ctok?celsius=400.45"))
+        mockMvc.perform(get("/conversions/ctok?celsius=400.45"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("74562.0"));
     }
@@ -58,7 +58,7 @@ class ConversionControllerTest {
         when(conversionController.convertKelvinToCelsius(anyFloat())).thenReturn(74562.00f);
 
         //SUT
-        mockMvc.perform(get("/conversion/ktoc?kelvin=400.45"))
+        mockMvc.perform(get("/conversions/ktoc?kelvin=400.45"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("74562.0"));
     }
@@ -69,7 +69,7 @@ class ConversionControllerTest {
         when(conversionController.convertKmsToMiles(anyDouble())).thenReturn(74562.0);
 
         //SUT
-        mockMvc.perform(get("/conversion/ktom?kms=400.45"))
+        mockMvc.perform(get("/conversions/ktom?kms=400.45"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("74562.0"));
     }
@@ -80,7 +80,7 @@ class ConversionControllerTest {
         when(conversionController.convertMilesToKms(anyDouble())).thenReturn(74562.0);
 
         //SUT
-        mockMvc.perform(get("/conversion/mtok?miles=400.45"))
+        mockMvc.perform(get("/conversions/mtok?miles=400.45"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("74562.0"));
     }
