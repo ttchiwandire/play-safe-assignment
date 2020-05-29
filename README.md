@@ -25,3 +25,8 @@ The ktom endpoint should produce, when given an input amount in kilometers, an o
 Part 2 – Console Roulette
 
 See the attached pdf file.
+
+##Roulette Service   ##
+Couldnt add tests because of time
+Didn't really use the file passed from commandline, program relies on prompted user input
+I realize my program takes maximum of two bets per user currently
